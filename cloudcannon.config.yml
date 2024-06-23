@@ -1,0 +1,51 @@
+paths:
+  uploads: uploads
+  uploads_use_relative_path: false
+  static: ''
+  dam_uploads: ''
+  dam_static: ''
+  collections: ''
+  data: _data
+  layouts: _layouts
+  includes: _includes
+collections_config:
+  data:
+    path: _data
+    output: false
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  pages:
+    path: ''
+    output: true
+    filter: strict
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+_inputs:
+  categories:
+    type: multiselect
+    options:
+      allow_create: true
+      empty_type: array
+    cascade: true
+  tags:
+    type: multiselect
+    options:
+      allow_create: true
+      empty_type: array
+    cascade: true
+_select_data:
+  sass:
+    sass_dir: _sass
+    style: compressed
+  resume_social_links:
+    resume_github_url: https://github.com/jglovier/resume-template
+    resume_twitter_url: http://twitter.com/jglovier
+    resume_dribbble_url: https://dribbble.com/jag
+    resume_linkedin_url: https://www.linkedin.com/in/joelglovier
+    resume_website_url: http://joelglovier.com
+    resume_medium_url: https://medium.com/@jglovier
+timezone: Etc/UTC
